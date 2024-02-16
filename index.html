@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>ActivityMaster</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="1.css">
+<style>
+    .button {
+        text-align: right;
+    }
+
+    .toggle {
+        display: none;
+    }
+    .toggle-container {
+    position: relative;
+    left: 200px;
+}
+</style>
+</head>
+<body>
+<div class="content">
+    <h2 class="heading"> Activity</h2>
+    <div class="button">
+        <button id="toggleButton"><i class="fa-solid fa-plus"></i> Add New Activity</button>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search" class="search" name="search" placeholder="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div class="container">
+        <h2 class="mb-5">Activity Table</h2>
+        <div class="table-responsive">
+            <table class="table table-striped custom-table">
+                <thead>
+                    <tr>
+                        <th>Activity Name</th>
+                        <th>Activity Description</th>
+                        <th>Doer Role</th>
+                        <th>Frequency</th>
+                        <th>Time Period</th>
+                        <th>Approver Role</th>
+                        <th>Reference Document</th>
+                        <th>Output Document</th>
+                        <th>Help Reference Document</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>kwvi</td>
+                        <td>ecsf</td>
+                        <td>efewf</td>
+                        <td>ewfe</td>
+                        <td>wfedf</td>
+                        <td>fewf</td>
+                        <td>ves</td>
+                        <td>eew</td>
+                        <td><a href="" class="more">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>jkvnjv</td>
+                        <td>dv</td>
+                        <td>fnv je</td>
+                        <td>djvnj</td>
+                        <td>dkjvnj</td>
+                        <td>djkv</td>
+                        <td>djkvn</td>
+                        <td>djvj</td>
+                        <td><a href="" class="more">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Parth</td>
+                        <td>ubuwb</td>
+                        <td>vdef</td>
+                        <td>wergvc</td>
+                        <td>efvf v</td>
+                        <td>werfg</td>
+                        <td> xcs</td>
+                        <td>erf</td>
+                        <td><a href="" class="more">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>djhvbewf</td>
+                        <td>hgfvewv</td>
+                        <td>ejkfbewjb</td>
+                        <td>jkjeb</td>
+                        <td>jkbvejb</td>
+                        <td>jkew</td>
+                        <td>skjdjvjkewb</td>
+                        <td>djkvj</td>
+                        <td><a href="" class="more">Edit</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="two">
+        <div class="a">
+            <label for="ActName">Activity Name</label>
+            <input type="text" id="ActName" name="ActName" class="ActName" placeholder="Text Field">
+
+            <label for="ActDesc">Activity Description</label>
+            <input type="text" id="ActDesc" name="ActDesc" class="ActDesc" placeholder="Text Field">
+            <br>
+        </div>
+
+        <div class="b">
+            <label for="DoerRole">Doer Role</label>
+            <select name="Role" id="Role" class="Role">
+                <option value="none">Select from Dropdown</option>
+                <option value="null">Null</option>
+            </select>
+
+            <label for="Frequency">Frequency</label>
+            <input type="text" id="Frequency" name="Frequency" class="Frequency" placeholder="Frequency">
+        
+
+        <div class="c">
+            <label for="Duration">Duration</label>
+            <input type="text" id="Duration" name="Duration" class="Duration" placeholder="Duration" >
+        
+            <label for="ApproverRole">ApproverRole</label>
+            <select name="ApproverRole" id="ApproverRole" class="ApproverRole">
+                <option value="none">Select from Dropdown</option>
+                <option value="null">Null</option>
+            </select>
+        </div>
+
+        <div class="d">
+            <label for="TrigAct">Triggering Activity</label>
+            <select name="TrigAct" id="TrigAct" class="TrigAct">
+                <option value="none">Select from Dropdown</option>
+                <option value="null">Null</option>
+            </select>
+        
+            <label for="Ref">Reference Document</label>
+            <input type="file" id="Ref" name="Ref">
+            <br>
+        </div>     
+        
+        <div class="e">
+            <label for="HelpRef">Help Reference Document</label>
+            <input type="file" id="HelpRef" name="HelpRef">
+            
+            <label for="fileToUpload">Output Document</label>
+            <input type="file" id="Output" name="Output">
+            <br>
+        </div>
+
+        <div class="f">
+            <label>Auditable</label>
+            <input type="radio" id="yes" name="yesno" value="yes" class="radio" style="margin-left: -500px;">
+            <label for="yes" class="yesnoo">Yes</label>
+            <input type="radio" id="yes" name="yesno" value="no" class="radiono">
+            <label for="no" class="yesno">No</label>
+            
+            <label>Disable</label>
+            <input type="radio" id="no" name="yesno" value="yes" class="radio">
+            <label for="yes" class="yesnoo">Yes</label>
+            <input type="radio" id="no" name="yesno" value="no" class="radiono">
+            <label for="no" class="yesno">No</label>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
